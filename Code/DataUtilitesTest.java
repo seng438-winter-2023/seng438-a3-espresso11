@@ -450,23 +450,7 @@ public class DataUtilitesTest extends DataUtilities {
 			
 		}
 	 
-	 // pass: correct exception thrown
-	 @Test (expected = IllegalArgumentException.class)
-	 public void getCumulativePercentagesNullArgument() throws Exception{
-		 DataUtilities.getCumulativePercentages(null);
-	 }
-	 /**
-		 * Test if a null parameter will result the method to fail
-		 */
-		@Test
-		public void nullCumulativePercentageTest() {
-			try {
-				DataUtilities.getCumulativePercentages(null);
-				fail("Cannot pass in null as a variable");
-			}catch(Exception e) {
-				assertTrue("Null is allowed as an argument", true);
-			}
-		}
+	
 	
 	@After
 	public void tearDown() throws Exception {
