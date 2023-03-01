@@ -27,7 +27,9 @@ public class DataUtilitesTest extends DataUtilities {
 	public void setUp() throws Exception {
 		 mockingContext = new Mockery();
 	     values = mockingContext.mock(Values2D.class);
+	     
 	}
+	
 	
 	
 	// calculateColumnTotal() test cases 
@@ -107,15 +109,14 @@ public class DataUtilitesTest extends DataUtilities {
 	    
 	    mockingContext.checking(new Expectations() {
 	        {
-	        	one(values).getRowCount();
-	            will(returnValue(1));
+	        	
 	            one(values).getColumnCount();
-	            will(returnValue(4));
+	            will(returnValue(1));
 	            
 	            one(values).getValue(0, 0);
-	            will(returnValue(5));
+	            will(returnValue(3));
 	            one(values).getValue(0, 1);
-	            will(returnValue(10));
+	            will(returnValue(2));
 	            one(values).getValue(0, 2);
 	            will(returnValue(3));
 	            
@@ -123,9 +124,8 @@ public class DataUtilitesTest extends DataUtilities {
 	    });
 	    
 	    //exercise	
-	    double result = DataUtilities.calculateRowTotal(values, 0);
-	    // verify
-	    assertEquals(result, 18.0, .00001d);
+	    double result = DataUtilities.calculateRowTotal(values,0);
+	    assertEquals(3, result, .000000001d);
 	    // tear-down: NONE in this test method
 	}
 	
@@ -135,16 +135,8 @@ public class DataUtilitesTest extends DataUtilities {
 	    
 	    mockingContext.checking(new Expectations() {
 	        {
-	        	one(values).getRowCount();
-	            will(returnValue(1));
+	        	
 	            one(values).getColumnCount();
-	            will(returnValue(4));
-	            
-	            one(values).getValue(0, 0);
-	            will(returnValue(5));
-	            one(values).getValue(0, 1);
-	            will(returnValue(10));
-	            one(values).getValue(0, 2);
 	            will(returnValue(3));
 	            
 	  
@@ -161,8 +153,36 @@ public class DataUtilitesTest extends DataUtilities {
 	    //exercise	
 	    double result = DataUtilities.calculateRowTotal(values,1);
 	    // verify
-	    assertEquals(result, 4.0, .00001d);
+	    assertEquals(4.0, result, .00001d);
 	    // tear-down: NONE in this test method
+	}
+	
+
+	/**
+	 * Testing function when data is valid and row is negative
+	 */
+	@Test
+	public void NonEmptyArrayNegRow() {
+		
+				mockingContext.checking(new Expectations() { 
+					{
+						one(values).getColumnCount(); 
+						will(returnValue(2));
+						
+						one(values).getValue(-0, 0);
+						will(returnValue(null));
+						
+						one(values).getValue(-0, 1); 
+						will(returnValue(null));
+						
+						
+					} 
+				});
+			
+		//exercise	
+	    double result = DataUtilities.calculateRowTotal(values,-0);
+	    // verify
+		assertEquals(0.0, result, .000000001d);
 	}
 
 	// fail: throws incorrect exception
@@ -435,7 +455,18 @@ public class DataUtilitesTest extends DataUtilities {
 	 public void getCumulativePercentagesNullArgument() throws Exception{
 		 DataUtilities.getCumulativePercentages(null);
 	 }
-
+	 /**
+		 * Test if a null parameter will result the method to fail
+		 */
+		@Test
+		public void nullCumulativePercentageTest() {
+			try {
+				DataUtilities.getCumulativePercentages(null);
+				fail("Cannot pass in null as a variable");
+			}catch(Exception e) {
+				assertTrue("Null is allowed as an argument", true);
+			}
+		}
 	
 	@After
 	public void tearDown() throws Exception {

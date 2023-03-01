@@ -450,8 +450,8 @@ public void testingNegativeToPositiveWithFalse() {
 public void testingNegativeToPositiveWithTrue() {
 	Range origRange = new Range(-3.0, -2.0);
 	Range rangeShift = Range.shift(origRange, 5.0, true);
-Range expected = new Range(2.0, 3.0);
-assertTrue("A shift of 5 should return a range of (2, 3)",
+	Range expected = new Range(2.0, 3.0);
+	assertTrue("A shift of 5 should return a range of (2, 3)",
         rangeShift.equals(expected));
 	
 }
