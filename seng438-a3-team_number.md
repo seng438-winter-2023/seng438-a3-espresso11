@@ -77,4 +77,4 @@ We decided to use EclEmma for our test coverages. After downloading and setting 
 
 # 10 Comments/feedback on the lab itself
 
-Some of the figures in the instructions document were missing which made it harder to setup the project. Moreover, during the intial setup process, we were not instructed to include any external jars and only realised that after setting up the whole project. Overall, this was our first experience with actual code coverage and it taught us many required skills for our future careers. 
+Some of the figures in the instructions document were missing which made it harder to setup the project. Moreover, during the intial setup process, we were not instructed to include any external jars and only realised that after setting up the whole project. Desired coverage percentage was provided for only three coverages. Since we chose a different one, we were not sure what percentage of that specific coverage is required. Overall, this was our first experience with actual code coverage and it taught us many required skills for our future careers. 
