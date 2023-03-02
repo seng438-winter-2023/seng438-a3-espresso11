@@ -73,7 +73,7 @@ Text…
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-We decided to use EclEmma for our test coverages. After downloading adn setting it up, we realised that it did not provide branch coverage for both of our classes whereas method and line coverage worked perfectly. To overcome this, we decided to use other coverage tools provided to us but encountered the same difficulty and hence emailed the TA regarding the issue. We were instructed to use another type of coverage adn we ended up choosing the instruction coverage to finish our project. 
+We decided to use EclEmma for our test coverages. After downloading and setting it up, we realised that it did not provide branch coverage for both of our classes whereas method and line coverage worked perfectly. To overcome this, we decided to use other coverage tools provided to us but encountered the same difficulty and hence emailed the TA regarding the issue. We were instructed to use another type of coverage and we ended up choosing the instruction coverage to finish our project. 
 
 # 10 Comments/feedback on the lab itself
 
