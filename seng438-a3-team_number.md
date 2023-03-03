@@ -65,7 +65,9 @@ Text…
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
-Text…
+In requirements-based test generation, the source code of the program being tested is unknown and the test conditions are based on the program requirements. In coverage-based test generation, the source code is known and the test conditions are built with that knowledge.
+Requirements-based testing has the advantage of providing a more accurate estimation of how long it will take to test the program, making it easier to plan the testing. However, if requirements provided are too brief, it may be difficult to design the tests and certain scenarios may be left out in the test conditions.
+Coverage-based testing allows the creation of additional test cases to increase coverage
 
 # 8 A discussion on how the team work/effort was divided and managed
 
