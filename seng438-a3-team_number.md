@@ -67,11 +67,11 @@ Text…
 
 In requirements-based test generation, the source code of the program being tested is unknown and the test conditions are based on the program requirements. In coverage-based test generation, the source code is known and the test conditions are built with that knowledge.
 Requirements-based testing has the advantage of providing a more accurate estimation of how long it will take to test the program, making it easier to plan the testing. However, if requirements provided are too brief, it may be difficult to design the tests and certain scenarios may be left out in the test conditions.
-Coverage-based testing allows the creation of additional test cases to increase coverage
+Coverage-based testing informs the test engineers about how much of a requirement is covered by the testing, and allows the creation of additional test cases to increase coverage. However, coverage-based testing measures the coverage of the code that has been written and is not concerned if the code for a specific function has not been implemented or have been omitted from the program.
 
 # 8 A discussion on how the team work/effort was divided and managed
 
-Text…
+All team members worked together on each part of the lab, including discussing portions done by one member to the rest of the team. We had ZOOM calls to divide our workload, determine which test tools to use and discuss our progress including any requirements we needed to test. We worked on creating unit tests until coverage was improved as much as possible. The lab report was split between members after a mutual agreement, and team members were consulted to check the information written down for each of the sections.
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
