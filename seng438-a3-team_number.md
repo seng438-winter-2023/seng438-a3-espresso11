@@ -14,7 +14,7 @@ for each group. Please see each lab document for details.)
 
 # 1 Introduction
 
-Text…
+The purpose of this lab is to expand the tests we developed in assignment 2. We were supposed to use the Junit framework to test different algorithms for JFreeChart, similar to the previous assignment. The difference in the two assignments is that this assignment utilizes a different technique called white-box coverage criteria which helps us develop our tests. We used this technique to write tests for the lines, statements and branches.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
