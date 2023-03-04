@@ -69,6 +69,8 @@ new Range() : (6,6)
 |                 |  u : (6, 6) |
 |                 |  new Range() : (6, 6) |
 
+**DU pair coverage**
+
 coverage = (DU pairs covered / Total pairs) * 100 = (9/9)*100 = 100%
 
 **DataUtilities.calculateColumnTotal()**
