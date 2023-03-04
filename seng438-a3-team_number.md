@@ -69,6 +69,81 @@ new Range() : (6,6)
 |                 |  u : (6, 6) |
 |                 |  new Range() : (6, 6) |
 
+coverage = (DU pairs covered / Total pairs) * 100 = (9/9)*100 = 100%
+
+**DataUtilities.calculateColumnTotal()**
+![image](https://user-images.githubusercontent.com/101993148/222879406-6a0a451f-6eac-4634-b7d3-5792138c0db6.png)
+
+**Def and use:**
+
+def(1) : {data, column}
+
+def(2) : {total, rowCount}
+
+def(3) : {r}
+
+def(4) : {n}
+
+def(6) : {total}
+
+def(7) : {n}
+
+use(1) : {data}
+
+use(2) : {data} 
+
+use(3) : {r, rowCount} 
+
+use(4) : {data, r, column}
+
+use(5) : {n}
+
+use(6) : {n}
+
+use(7) : {r}
+
+use(8) : {total} 
+
+**DU pairs per variable:**
+
+data : (1,1) , (1,2) , (1,4)
+
+column : (1,4)
+
+total : (2,6) , (2,8) , (6,8)
+
+rowCount : (2,3)
+
+r : (3,3) , (3,4) , (3,7) , (7,3)
+
+n : (4,5) , (5,6)
+
+**Pairs covered for test cases**
+
+| Test Cases       | Pairs Covered |
+|-----------------|------------|
+|  calculateColumnTotalForThreeRows()  | data : (1,1) , (1,2) , (1,4)  |
+|                 | column : (1,4) |
+|                 | total : (2,6) , (2,8) , (6,8) |
+|                 | rowCount : (2,3) |
+|                 | r : (3,3) , (3,4) , (3,7) , (7,3) |
+|                 | n : (4,5) , (5,6) |
+|  calculateColumnTotalForMutipleColumns()  | data : (1,1) , (1,2) , (1,4)  |
+|                 | column : (1,4) |
+|                 | total : (2,6) , (2,8) , (6,8) |
+|                 | rowCount : (2,3) |
+|                 | r : (3,3) , (3,4) , (3,7) , (7,3) |
+|                 | n : (4,5) , (5,6) |
+|  NegativeColumn()  | data : (1,1) , (1,2) |
+|                 | rowCount : (2,3) |
+|                 | r : (3,3) |
+|  NullValuesForColumn()   | data : (1,1) |
+
+**DU pair coverage**
+
+coverage = (DU pairs covered / Total pairs) * 100 = (14/14)*100 = 100%
+
+
 
 # 3 A detailed description of the testing strategy for the new unit test
 
@@ -77,7 +152,6 @@ We used our old tests from assignment two which had the coverage for DataUtilite
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 In class DataUtilities, some of the test cases we designed using coverage information are as follows:
-
 CalculateRowTotalOutOfBounds()
 
 NegativeRow()
@@ -132,9 +206,7 @@ Our group decided to initially use EclEmma. Just as we started our code coverage
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
 In requirements-based test generation, the source code of the program being tested is unknown and the test conditions are based on the program requirements. In coverage-based test generation, the source code is known and the test conditions are built with that knowledge.
-
 Requirements-based testing has the advantage of providing a more accurate estimation of how long it will take to test the program, making it easier to plan the testing. However, if requirements provided are too brief, it may be difficult to design the tests and certain scenarios may be left out in the test conditions.
-
 Coverage-based testing informs the test engineers about how much of a requirement is covered by the testing, and allows the creation of additional test cases to increase coverage. However, coverage-based testing measures the coverage of the code that has been written and is not concerned if the code for a specific function has not been implemented or have been omitted from the program.
 
 # 8 A discussion on how the team work/effort was divided and managed
