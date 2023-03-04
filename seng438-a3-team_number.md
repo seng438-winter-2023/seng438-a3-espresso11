@@ -113,7 +113,7 @@ Instruction coverage for DataUtilities:
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
-Text…
+Our group decided to initially use EclEmma. Just as we started our code coverage testing, we ran into a problem. EclEmma was not showing code coverage for the branch method. So we had to try other provided methods. We faced a similar issue with the methods that we tried. Hence, we decided to stick with EclEmma and switch our code coverage method from branch to instruction coverage. Overall, EclEmma was a very useful tool as it showed us exactly which lines were causing problems. The lines are color coded with green lines being the ones that were read correctly by the system and red lines being the ones that were not read by the system. This allowed us to pinpoint the errors and fix it. However, EclEmma did not have built in coverages for condition coverage and statement coverage. We were recommended to use these two types of coverages in our assignment description but we had to improvise and use other types of coverages.
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
