@@ -26,7 +26,9 @@ We used our old tests from assignment two which had the coverage for DataUtilite
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
-Text…
+Some test cases we designed using coverage information are CalculateRowTotalOutOfBounds(), NegativeRow() and create2DNumberArrayNullArgument() in DataUtilites. These test cases expect an IndexOutOfBoundsException which we did not cover before. Additionally, we designed some test cases for clones which are cloneNegative() and clonePositive() in DataUtilities. These test cases allowed us to increase the branch coverage.
+
+We increased branch coverage by introducing new tests. Also, we increased line coverage by getting our code to run through more lines and we increased method coverage by including more methods. 
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 
