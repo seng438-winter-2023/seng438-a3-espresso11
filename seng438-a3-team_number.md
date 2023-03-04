@@ -22,7 +22,7 @@ Text…
 
 # 3 A detailed description of the testing strategy for the new unit test
 
-Text…
+When used our old tests from assignment two which had the coverage for DataUtilites in a decent range however, for Range it was very low. So we made tests for the methods that we skipped in assignment 3.  They were divided as follows: Muteeba did three, Iman did three, Shahzill did two and Rumaisa did one. The members who did less development contributed in other areas. Additionally, we added more tests to provide more branch, line and method coverage.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
