@@ -77,6 +77,7 @@ We used our old tests from assignment two which had the coverage for DataUtilite
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 
 In class DataUtilities, some of the test cases we designed using coverage information are as follows:
+
 CalculateRowTotalOutOfBounds()
 
 NegativeRow()
@@ -131,7 +132,9 @@ Our group decided to initially use EclEmma. Just as we started our code coverage
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
 
 In requirements-based test generation, the source code of the program being tested is unknown and the test conditions are based on the program requirements. In coverage-based test generation, the source code is known and the test conditions are built with that knowledge.
+
 Requirements-based testing has the advantage of providing a more accurate estimation of how long it will take to test the program, making it easier to plan the testing. However, if requirements provided are too brief, it may be difficult to design the tests and certain scenarios may be left out in the test conditions.
+
 Coverage-based testing informs the test engineers about how much of a requirement is covered by the testing, and allows the creation of additional test cases to increase coverage. However, coverage-based testing measures the coverage of the code that has been written and is not concerned if the code for a specific function has not been implemented or have been omitted from the program.
 
 # 8 A discussion on how the team work/effort was divided and managed
