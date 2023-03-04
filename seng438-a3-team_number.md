@@ -18,7 +18,57 @@ The purpose of this lab is to expand the tests we developed in assignment 2. We 
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-Text…
+Range.combine()
+![image](https://user-images.githubusercontent.com/101993148/222874712-9aadea1c-1adf-46c5-a6e8-2e5d9c870f4f.png)
+
+**Def and use:**
+
+def(1) : {range1,range2}
+
+def(6) : {l,u, new Range()}
+
+use(2) : {range1} 
+
+use(3) : {range2}
+
+use(4) : {range2}
+
+use(5) : {range1}
+
+use(6) : {range1, range2, l , u, new Range()}
+
+**DU pairs per variable:**
+
+range1 : (1,2) , (1,5) , (1,6)
+
+range2 : (1,3) , (1,4) , (1,6)
+
+u : (6,6)
+
+l : (6,6)
+
+new Range() : (6,6)
+
+**Pairs covered for test cases**
+| Test Cases       | Pairs Covered |
+|-----------------|------------|
+|  firstRangeNull()  | range1 : (1, 2)  |
+|                 | range2 : (1, 3)  |
+| secondRangeNull()  | range1 : (1, 2) , (1, 5)  |
+|                 |  range2 : (1, 4) |
+| bothRangeNull()  | range1 : (1, 2) |
+|                 |  range2 : (1, 3) |
+| identicalRanges()  | range1 : (1, 2) , (1, 6) |
+|                 |  range2 : (1, 4) , (1, 6)|
+|                 |  l : (6, 6) |
+|                 |  u : (6, 6) |
+|                 |  new Range() : (6, 6) |
+| continuousRanges()  | range1 : (1, 2) , (1, 6) |
+|                 |  range2 : (1, 4) , (1, 6)|
+|                 |  l : (6, 6) |
+|                 |  u : (6, 6) |
+|                 |  new Range() : (6, 6) |
+
 
 # 3 A detailed description of the testing strategy for the new unit test
 
